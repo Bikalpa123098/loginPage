@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: rgb(255, 245, 227);
+    color: #1a1a1a;
+  }
+
+  nav {
+    background: darkblue;
+    border-bottom: 1px solid #eaeaea;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav .logo {
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  nav .links {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+  }
+
+  nav .links a {
+    color: #dadada;
+    text-decoration: none;
+  }
+
+  nav .links a:hover {
+    color: white';
+  }
+
+  nav .logout {
+    font-size: 13px;
+    color: #143eba;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    padding: 6px 14px;
+    border-radius: 8px;
+    background: rgb(255, 245, 227);
+  }
+
+  nav .logout:hover {
+    background: #fffdfa;
+    color: darkblue;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  main h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  main p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 30px;
+  }
+
+  .card {
+    background: darkblue;
+    border: 1px solid #2c2c2c;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: left;
+  }
+
+  .card h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: #ffffff;
+  }
+
+  .card p {
+    font-size: 13px;
+    color: rgb(207, 207, 207);
+    margin-bottom: 0;
+  }
+</style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">BIkalpa</div>
+    <div class="links">
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </div>
+    <a class="logout" href="index.html">Log out</a>
+  </nav>
+
+  <main>
+    <h1>Welcome back</h1>
+    <p>You've successfully logged in. Here's a quick look at your account.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Projects</h3>
+        <p>You have 4 active projects.</p>
+      </div>
+      <div class="card">
+        <h3>Messages</h3>
+        <p>2 new messages waiting for you.</p>
+      </div>
+      <div class="card">
+        <h3>Tasks</h3>
+        <p>6 tasks due this week.</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
