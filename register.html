@@ -145,12 +145,10 @@
 
     <div class="divider">OR</div>
 
-    <p class="signup">Already have an account? <a href="login.html">Log in</a></p>
+    <p class="signup">Already have an account? <a href="index.html">Log in</a></p>
   </div>
 
 <script>
-  // Users are stored in localStorage (no database) so they persist
-  // across page loads and are visible to login.html too.
   function getUsers() {
     return JSON.parse(localStorage.getItem('users')) || [];
   }
@@ -185,7 +183,7 @@
     alert('Account created successfully! You can now log in.');
 
     document.getElementById('registerForm').reset();
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
   });
 </script>
 
